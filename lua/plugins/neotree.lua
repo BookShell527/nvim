@@ -1,18 +1,27 @@
 return {
-  'nvim-neo-tree/neo-tree.nvim',
+  'nvim-tree/nvim-tree.lua',
   version = '*',
-  dependencies = {
-    'nvim-lua/plenary.nvim',
-    'nvim-tree/nvim-web-devicons',
-    'MunifTanjim/nui.nvim',
-  },
   lazy = false,
-  keys = {},
-  opts = {
-    filesystem = {
-      window = {
-        mappings = {},
-      },
-    },
+  dependencies = {
+    'nvim-tree/nvim-web-devicons',
   },
+  config = function()
+    require('nvim-tree').setup {
+      sort = {
+        sorter = 'case_sensitive',
+      },
+      view = {
+        width = 25,
+        side = 'right',
+      },
+      renderer = {
+        group_empty = true,
+      },
+      filters = {
+        dotfiles = true,
+      },
+    }
+    vim.api.nvim_set_hl(0, 'NvimTreeNormal', { bg = 'none', ctermbg = 'none' })
+    vim.api.nvim_set_hl(0, 'NvimTreeNormalNC', { bg = 'none', ctermbg = 'none' })
+  end,
 }

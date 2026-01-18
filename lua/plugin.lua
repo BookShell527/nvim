@@ -1,6 +1,7 @@
 require('lazy').setup({
   'NMAC427/guess-indent.nvim',
   require 'plugins.gitsign',
+  require 'plugins.flutter',
   require 'plugins.whichkey',
   require 'plugins.telescope',
   {
@@ -20,7 +21,6 @@ require('lazy').setup({
   require 'plugins.mini',
   require 'plugins.treesitter',
   require 'plugins.neotree',
-  require 'plugins.flutter',
   require 'plugins.terminal',
   {
     'windwp/nvim-autopairs',
@@ -34,6 +34,7 @@ require('lazy').setup({
       require('competitest').setup()
     end,
   },
+  require 'plugins.discord',
 }, {
   ui = {
     icons = vim.g.have_nerd_font and {} or {

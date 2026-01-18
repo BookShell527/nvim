@@ -47,7 +47,7 @@ return { -- Autocompletion
         end,
         'fallback',
       },
-      ['<C-z>'] = { 'show_documentation', 'fallback' },
+      ['<C-x>'] = { 'show', 'fallback' },
       ['<CR>'] = { 'accept', 'fallback' },
     },
     appearance = {

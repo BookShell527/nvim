@@ -7,7 +7,7 @@ vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower win
 vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 vim.keymap.set('i', 'jk', '<Esc>', { desc = 'Normal Mode' })
 
-vim.keymap.set('n', '<leader>e', '<CMD> Neotree toggle <CR>', { desc = 'Open Neotree' })
+vim.keymap.set('n', '<leader>e', '<CMD> NvimTreeToggle <CR>', { desc = 'Open Neotree' })
 
 -- Buffer
 vim.keymap.set('n', '<leader>|', '<CMD> vsplit <CR>', { desc = 'Split Vertically' })
