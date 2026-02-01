@@ -1,0 +1,24 @@
+{
+        "Competitive Programming": {
+            "prefix": "cp",
+            "body": [
+                "#include <bits/stdc++.h>",
+                "using namespace std;",
+                "#define ll long long",
+                "#define MOD 1000000007",
+                "#define pq(x) priority_queue<x>",
+                "#define pqi(x) priority_queue<x, vector<x>, greater<x>>",
+                "#define um unordered_map",
+                "",
+                "void solve() {",
+                "}",
+                "",
+                "int main() {",
+                "    int t = 1;",
+                "    // cin >> t;",
+                "   while (t--) solve();",
+                "    return 0;",
+                "}"
+            ]
+        }
+}
